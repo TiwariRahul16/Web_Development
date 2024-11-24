@@ -1,37 +1,63 @@
 import Link from 'next/link'
 import React from 'react'
+import { useState } from 'react';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Asidenavigation = () => {
+  const [navigation, setnavigation] = useState(true)
+
+  const handletoggle = () =>{
+    setnavigation(!navigation)
+  }
+
   return (
-    <aside className="w-1/4 bg-gray-200 p-4">
-     <h2 className="text-lg font-bold mb-4">Java Tutorial</h2>
-     <ul className="space-y-2">
-        <li><Link href="#" className="block text-green-600 font-bold">Java HOME</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Intro</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Get Started</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Syntax</Link></li>
-         <li><Link href="#" className="block text-gray-700">Java Output</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Comments</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Variables</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Data Types</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Type Casting</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Operators</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Strings</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Math</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Booleans</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java If...Else</Link></li>
-         <li><Link href="#" className="block text-gray-700">Java Switch</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java While Loop</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java For Loop</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Break/Continue</Link></li>
-        <li><Link href="#" className="block text-gray-700">Java Arrays</Link></li>
+    <>
+
+{/* <div className=' mt-9' > */}
+    {/* <div className='flex gap-1'>
+    <span className='text-2xl font-bold mb-4'>Tutorial</span>
+    <button onClick={handletoggle} className='text-3xl font-bold mb-4'><GiHamburgerMenu /></button>
+    </div> */}
+     {/* <ul className= {`${navigation?"flex":"hidden"} space-y-2  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-16 mt-10`}> */}
+        {/* <li><Link href="#" className="block text-green-600 font-bold">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700">Upcoming... Started </Link></li>
     </ul>
-    <h2 className="text-lg font-bold mt-6 mb-4">Java Methods</h2>
-    <ul className="space-y-2">
-          <li><Link href="#" className="block text-gray-700">Java Methods</Link></li>
-          <li><Link href="#" className="block text-gray-700">Java Method Parameters</Link></li>
+  </div> */}
+<div>
+  <button onClick={handletoggle} className='relative top-0  text-3xl font-bold mb-4'><GiHamburgerMenu /></button>
+    <div className={`${navigation?"block":"hidden"} px-2 py-4 bg-slate-200  max-h-screen overflow-y-auto overflow-x-auto`}>
+     <h2 className=" text-xl font-bold mb-4">Tutorial</h2>
+     <ul className="space-y-2 text-lg">
+        <li><Link href={'/html'} className="block text-gray-700 hover:text-green-600">Html</Link></li>
+        <li><Link href={'/css'} className="block text-gray-700 hover:text-green-600">Css</Link></li>
+        <li><Link href={'/tailwindcss'} className="block text-gray-700 hover:text-green-600">Tailwind Css</Link></li>
+        <li><Link href={'/connection'} className="block text-gray-700 hover:text-green-600">Connect mongodb using node.js</Link></li>
+         <li><Link href={'/express'} className="block text-gray-700 hover:text-green-600">Express server</Link></li>
+        <li><Link href={'/ConnectDbUsingNext'} className="block text-gray-700 hover:text-green-600">Connect mongodb in next.js</Link></li>
+        <li><Link href={'/HandleFormInNext'} className="block text-gray-700 hover:text-green-600">Handling form in next.js using serevr action</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming......</Link></li>
+         <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming... </Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
+        <li><Link href="#" className="block text-gray-700 hover:text-green-600">Upcoming...</Link></li>
     </ul>
- </aside>
+    </div>
+    </div>
+ 
+    </>
   )
 }
 

@@ -12,7 +12,7 @@ const install = [
 const ConnectDB = [
   { 
     language: 'javascript', 
-    code: `//  /connectDB.js
+    code: `//  /app/db/connectDB.js 
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
@@ -37,7 +37,7 @@ const connectDB = async () => {
 const Page = () => {
   return (
   <main className="mx-auto w-3/4 bg-white p-6">
-    <h1 className="text-2xl font-bold mb-4">How to connect MongoDB to your project using node.js</h1>
+    <h1 className="text-2xl font-bold mb-4">How to connect MongoDB to your project in next.js</h1>
       <p className="mb-4 text-lg font-bold">First install mongoose</p>
       <p className="mb-4">Run this command in VsCode Project terminal</p>
       <div style={{ padding: '20px' }}>

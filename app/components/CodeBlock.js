@@ -31,7 +31,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import CopyButton from './CopyButton';
 
 // Registering all the languages
-const languages = ['javascript', 'python', 'cpp', 'java']; // add other languages as needed
+const languages = ['javascript', 'python', 'cpp', 'java', 'html', 'css', 'tailwindcss']; // add other languages as needed
 languages.forEach(lang => {
   if (hljs[lang]) {
     SyntaxHighlighter.registerLanguage(lang, hljs[lang]);
