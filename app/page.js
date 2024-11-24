@@ -49,7 +49,8 @@ export default function Home() {
     </div>
    <div className="bg-gray-100 w-full p-2 md:p-4">
       <div className="bg-white p-2 md:p-4 rounded-lg shadow-md">
-        <img className='sm:w-40 sm:h-12 mb-2' src="mongodb.png" alt="" />
+        {/* <img className='sm:w-40 sm:h-12 mb-2' src="mongodb.png" alt="" /> */}
+        <h1 className="text-sm sm:text-xl font-bold mb-6">Upcoming..</h1>
         <h1 className="text-sm sm:text-xl font-bold">Jump back in!</h1>
         <Link href={'/connection'}>
         <button className="bg-orange-400 py-1 px-2 sm:py-3 sm:px-3 mb-4 mt-4 rounded text-wrap text-sm sm:font-semibold hover:bg-opacity-75">
@@ -60,7 +61,8 @@ export default function Home() {
     </div>
    <div className="bg-gray-100 w-full p-2 md:p-4">
       <div className="bg-white p-2 md:p-4 rounded-lg shadow-md">
-        <img className='sm:w-40 sm:h-12 mb-2' src="mongodb.png" alt="" />
+        {/* <img className='sm:w-40 sm:h-12 mb-2' src="mongodb.png" alt="" /> */}
+        <h1 className="text-sm sm:text-xl font-bold mb-6">Upcoming..</h1>
         <h1 className="text-sm sm:text-xl font-bold">Jump back in!</h1>
         <Link href={'/connection'}>
         <button className="bg-orange-400 py-1 px-2 sm:py-3 sm:px-3 mb-4 mt-4 rounded text-wrap text-sm sm:font-semibold hover:bg-opacity-75">
